@@ -11,7 +11,6 @@ class NodeRepository{
 		this.__bestWorker 
 		this.__bestValue
 		this.__validWorkers = this.get_valid_workers()
-		// this.__nodeSilverValue = silver
 		
 
 	}
@@ -24,9 +23,6 @@ class NodeRepository{
 	get validWorker(){
 		return this.__validWorkers
 	}
-	// get nodeSilverValue(){
-	// 	return this.__nodeSilverValue
-	// }
 	get time(){
 		return this.__time
 	}
@@ -46,11 +42,6 @@ class NodeRepository{
 			this.__validWorkers = _validWorker
 		}
 	}
-	// set nodeSilverValue(_nodeSilverValue){
-	// 	if(_nodeSilverValue){
-	// 		this.__nodeSilverValue = _nodeSilverValue
-	// 	}
-	// }
 	set time(_time){
 		if(_time){
 			this.__time = _time
@@ -69,11 +60,10 @@ class NodeRepository{
 				if(this.worker_vector[i].get_silver_undertimer(this.node, this.time) > _bestWorker.get_silver_undertimer(this.node, this.time)){
 					_bestWorker = this.worker_vector[i]
 				}
-				//console.log("vxc")
+				
 			}
-			//console.log(this.worker_vector[i])	
-		}//console.log(this.__workerVector)	
-		//console.log(_w)	
+			
+		}
 		this.__bestWorker = _bestWorker
 		this.__bestValue = _bestWorker.get_silver_undertimer(this.node, this.time)
 		return _w

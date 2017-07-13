@@ -47,16 +47,12 @@ class Worker{
 	}
 
 
-	// get_node_time(node_workLoad, node_distance){
-	// 	return Math.ceil(node_workLoad/this.workSpeed)*600 + node_distance * 2 / this.movementSpeed
-	// }
+
 	get_maximum_worktime_on_node(_node){
 		return this.stamina * this.get_node_time(_node)
 	}
 
-	// get_maximum_worktime_on_node(node_workLoad, node_distance){
-	// 	return this.stamina * this.get_node_time(node_workLoad, node_distance)
-	// }
+
 
 
 	get_silver_allenergy(_node){
@@ -71,12 +67,7 @@ class Worker{
 	}
 
 
-	// get_silver_undertimer(silver, time,node_workLoad, node_distance){
-	// 	if(this.get_maximum_worktime_on_node(node_workLoad, node_distance) < time){
-	// 		return this.get_silver_allenergy(silver)
-	// 	}
-	// 	return (Math.floor(time/this.get_node_time(node_workLoad, node_distance))+ 1)*silver
-	// }
+
 
 	test_fucntion(_nodul){
 		console.log(_nodul.distance)

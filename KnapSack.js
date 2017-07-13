@@ -22,31 +22,7 @@ var maxWeight = []
 var _silvers= []
 var _timp = 60 * 60 *6 
 var _allsilver = []
-/*
-// weight[0] = Math.floor(user.get_node_time(nodul.workload, nodul.distance) )
-// weight[1] = Math.floor(user2.get_node_time(nodul.workload, nodul.distance) )
-// weight[2] = Math.floor(user3.get_node_time(nodul.workload, nodul.distance) )
-// weight[3] = Math.floor(user4.get_node_time(nodul.workload, nodul.distance) )
 
-
-// maxWeight[0] = Math.floor(user.get_maximum_worktime_on_node(nodul.workload, nodul.distance) )
-// maxWeight[1] = Math.floor(user2.get_maximum_worktime_on_node(nodul.workload, nodul.distance) )
-// maxWeight[2] = Math.floor(user3.get_maximum_worktime_on_node(nodul.workload, nodul.distance) )
-// maxWeight[3] = Math.floor(user4.get_maximum_worktime_on_node(nodul.workload, nodul.distance) )
-
-// _allsilver[0] = Math.floor(user.get_silver_allenergy(nodul.silver))
-// _allsilver[1] = Math.floor(user2.get_silver_allenergy(nodul.silver))
-// _allsilver[2] = Math.floor(user3.get_silver_allenergy(nodul.silver))
-// _allsilver[3] = Math.floor(user4.get_silver_allenergy(nodul.silver))
-
-
-// _silvers[0] = Math.floor(user.get_silver_undertimer(nodul.silver, _timp , nodul.workload, nodul.distance))
-// _silvers[1] = Math.floor(user2.get_silver_undertimer(nodul.silver, _timp , nodul.workload, nodul.distance))
-// _silvers[2] = Math.floor(user3.get_silver_undertimer(nodul.silver, _timp , nodul.workload, nodul.distance))
-// _silvers[3] = Math.floor(user4.get_silver_undertimer(nodul.silver, _timp , nodul.workload, nodul.distance))
-
-//console.log(_timp)
-*/
 utilities.printIdentifyWorker(user)
 var i = 0
 for (var e in userV){
@@ -59,7 +35,6 @@ for (var e in userV){
 }
 for( var i = 0 ; i< 4 ;i++){
 	console.log("Worker " + i )
-	//userV[i].identify(userV[i])
 	console.log(weight[i] + " Seconds needed to finsih a work cicle")
 	console.log(maxWeight[i] + " Seconds needed to use all stamina")
 	console.log((maxWeight[i]  - _timp )+ " Second over 6 hours needed to finish a workcycle")
