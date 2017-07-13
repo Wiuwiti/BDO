@@ -59,7 +59,7 @@ for (var e in userV){
 }
 for( var i = 0 ; i< 4 ;i++){
 	console.log("Worker " + i )
-	userV[i].identify(userV[i])
+	//userV[i].identify(userV[i])
 	console.log(weight[i] + " Seconds needed to finsih a work cicle")
 	console.log(maxWeight[i] + " Seconds needed to use all stamina")
 	console.log((maxWeight[i]  - _timp )+ " Second over 6 hours needed to finish a workcycle")
