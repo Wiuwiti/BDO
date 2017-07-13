@@ -1,32 +1,14 @@
 'use strict'
 const Nod = require('./Noduri.js')
 const User = require('./Worker.js')
+let user  = new User(134.49,6.99,9.95, 15);
+let user2 = new User(96.51, 3.90, 24.64, 23);
+
+let user3 = new User(87.80, 3.44, 9.87, 35);
 
 
-let nods = new Nod(144.49,679, "nothing");
-let nods2 = new Nod(144.47, 855, nods)
-let user  = new User(134.49,6.99,9.95,15);
+let nodul = new Nod("Farm_node", "Heidel", 198.60, 406, 3740)
 
-var workerDic = {}
-
-
-// console.log(nods.distance)
-// var time = user.get_node_time(nods2.workload, nods2.distance)
-// console.log(nods2.parent.parent)
-// console.log(Math.floor(time/60) + "M " + time%60 + "S.")
-
-var Graph = require("graphlib").Graph;
-
-// Create a new directed graph
-var g = new Graph();
-g.setNode(user);
-// g.setNode(nods);
-// g.setNode(nods2);
-
-console.log(g.nodes());
-//var n = []
-
-for (var n in g.nodes()){
-	console.log(n)
-}
-// => true
+console.log(nodul.get_maximum_efficiency(user.workSpeed, user.movementSpeed, user.stamina))
+console.log(nodul.get_maximum_efficiency(user2.workSpeed, user2.movementSpeed, user2.stamina))
+console.log(nodul.get_maximum_efficiency(user3.workSpeed, user3.movementSpeed, user3.stamina))
